@@ -1,0 +1,98 @@
+//user
+
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Mariana",
+    "apellido": "Molina",
+    "identificacion": 95158168889,
+    "edad": 39,
+    "email":"marianamolina@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/6417951b92dc07635208e078 HTTP/1.1
+PUT  http://localhost:3000/api/users/c HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Marzela",
+    "apellido": "Rosas",
+    "identificacion": 25186108533,
+    "edad": 28,
+    "email":"marzerosas@gmail.com"
+}
+
+###
+DELETE  http://localhost:3000/api/users/6417951b92dc07635208e078 HTTP/1.1
+
+
+###
+//futbolistas
+POST http://localhost:3000/api/futbolistas HTTP/1.1
+Content-Type: application/json
+
+{
+"Nombre": "Thiago Alcántara" ,
+"Edad": 31 ,
+"Equipo_actual": "Liverpool",
+"Posición": "Centrocampista"}
+
+
+
+###
+GET http://localhost:3000/api/futbolistas HTTP/1.1
+
+###
+GET http://localhost:3000/api/futbolistas/64191e3fae413b458ba94f88 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/futbolistas/64191e3fae413b458ba94f88 HTTP/1.1
+Content-Type: application/json
+
+{
+"Nombre": "Thiago Alcántara" ,
+"Edad": 31 ,
+"Equipo_actual": "Liverpool",
+"Posición": "Centrocampista"}
+
+###
+DELETE  http://localhost:3000/api/futbolistas/64191e3fae413b458ba94f88 HTTP/1.1
+
+
+//automobiles
+###
+POST http://localhost:3000/api/equipos HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre": "Atletico de Madrid",
+    "Año": 1903,
+    "Estadio": "Civitas Metropolitano",
+    "Pais": "España"
+}
+
+###
+GET http://localhost:3000/api/equipos HTTP/1.1
+
+###
+GET http://localhost:3000/api/equipos/641933b6c9c7bcf7e116e12a HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/equipos/641933b6c9c7bcf7e116e12a HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre": "Atletico de Madrid",
+    "Año": 1903,
+    "Estadio": "Civitas Metropolitano",
+    "Pais": "España"
+}
+
+###
+DELETE  http://localhost:3000/api2/automobiless HTTP/1.1
